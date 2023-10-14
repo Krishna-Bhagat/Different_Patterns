@@ -1,3 +1,6 @@
+// Example of prefferable number:  15234, 7564312, 2413,312,.....
+// Output for above example: 41235, 7564312,3142, 312..
+
 import java.util.Scanner;
 public class inverse_of_num {
     public static void main(String[] args) {
