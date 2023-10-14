@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class rotation_of_number {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int neg = 0;
+        // int neg = 0;
         System.out.print("Enter any number for Rotation:   ");
         int num = sc.nextInt();
         int digit = (int) Math.log10(num);
@@ -21,7 +21,7 @@ public class rotation_of_number {
         int rem = num % (int) Math.pow(10, k);
         num /= (int) Math.pow(10, k);
         num = (rem * (int) Math.pow(10, digit + 1 - k)) + num;
-        
+
         // if(k>0){
         // int rem=num%(int)Math.pow(10,k);
         // num/=(int)Math.pow(10,k);
