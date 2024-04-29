@@ -24,8 +24,8 @@ public class Merge_sort_inplace {
             else{
                 int tem = arr[b];
                 for (int k = b ; k > a; k--) {
-                arr[k] = arr[k-1];
-            }
+                    arr[k] = arr[k-1];
+                }
                 arr[a] = tem;
                 a++;
                 b++;
@@ -33,31 +33,4 @@ public class Merge_sort_inplace {
             }
         }
     }
-
-    // private static void merge(int[] arr, int s, int mid, int e) {
-    //     int[] temp = new int[e - s];
-    //     int a = s, b = mid, i = 0;
-    
-    //     while (a < mid && b < e) {
-    //         if (arr[a] < arr[b]) {
-    //             temp[i++] = arr[a++];
-    //         } else {
-    //             temp[i++] = arr[b++];
-    //         }
-    //     }
-    
-    //     while (a < mid) {
-    //         temp[i++] = arr[a++];
-    //     }
-    
-    //     while (b < e) {
-    //         temp[i++] = arr[b++];
-    //     }
-    
-    //     // Copy elements from temp back to arr
-    //     for (int j = 0; j < temp.length; j++) {
-    //         arr[s + j] = temp[j];
-    //     }
-    // }
-    
 }
